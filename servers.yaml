@@ -1,0 +1,51 @@
+---
+linked_mode: true
+
+subnet: 192.168.36
+
+vms:
+  - name: chef-wks1
+    cpu: 2
+    ram: 4096
+    box: ubuntu/xenial64
+    ip: 10
+    provision:
+      scripts:
+      - name: scripts/pre-req.sh
+  - name: chef-srv1
+    cpu: 2
+    ram: 4096
+    box: ubuntu/xenial64
+    ip: 11
+    provision:
+      scripts:
+      - name: scripts/pre-req.sh
+  - name: chef-node1
+    cpu: 1
+    ram: 1024
+    box: ubuntu/xenial64
+    ip: 12
+    provision:
+      scripts:
+      - name: scripts/pre-req.sh
+  - name: chef-node2
+    cpu: 1
+    ram: 1024
+    box: centos/7
+    ip: 13
+    provision:
+      scripts:
+      - name: scripts/pre-req.sh
+  - name: chef-node3
+    cpu: 1
+    ram: 1024
+    box: bento/ubuntu-14.04
+    ip: 14
+    provision:
+      scripts:
+      - name: scripts/pre-req.sh
+  - name: chef-node4
+    cpu: 1
+    ram: 2048
+    box: opentable/win-2012r2-standard-amd64-nocm
+    ip: 15
