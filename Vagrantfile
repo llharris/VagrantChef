@@ -33,7 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                 id: "rdp",
                 auto_correct: true
             srv.vm.provider :virtualbox do |vb|
-                vb.name = servers["name"]
+                #vb.name = servers["name"]
                 vb.cpus = servers["cpu"]
                 vb.memory = servers["ram"]
                 vb.linked_clone = hosts["linked_mode"]

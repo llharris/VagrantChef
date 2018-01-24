@@ -1,17 +1,9 @@
 ---
 linked_mode: true
 
-subnet: 192.168.36
+subnet: 192.168.134
 
 vms:
-  - name: chef-wks1
-    cpu: 2
-    ram: 4096
-    box: ubuntu/xenial64
-    ip: 10
-    provision:
-      scripts:
-      - name: scripts/pre-req.sh
   - name: chef-srv1
     cpu: 2
     ram: 4096
